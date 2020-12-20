@@ -47,6 +47,10 @@ int main(int argc, char **argv){
 
 	printf("Últime acceso : %d:%d\n", tm->tm_hour, tm->tm_min);
 
+	//st_atime: Último acceso Modificado por read, execve, utime...
+	//st_mtime: Última modificación Modificado por write, utime... No en cambio de i-nodo
+	//st_ctime: Último cambio de estado Modificado cuando se altera el i-nodo (propietario, permisos…)
+
 	return 1;
 
 
