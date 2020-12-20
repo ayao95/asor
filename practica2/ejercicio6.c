@@ -12,10 +12,10 @@ int main(){
 
 	//rwxr-x---
 	mode_t pre=umask(027);
-	const char PATH[]="/home/usuarioso/ej611.txt";
+	const char PATH[]="/home/usuarioso/ej6.txt";
 	char * c;
 	//rw-r--r-x
-	int res=open(PATH, O_CREAT, 0675);
+	int res=open(PATH, O_CREAT, 0645);
 	printf("Descriptor = %i\n", res);
 	perror(c);
 
