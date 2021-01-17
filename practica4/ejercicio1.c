@@ -16,6 +16,11 @@ int main(int argc, char** argv){
   //creamos tuberia
   int fd[2];
   int pip = pipe(fd);
+  if(pip==-1){
+    printf("ERROR al crear tuberia\n");
+    perror(c);
+    return -1;
+  }
 
   switch (fork()) {
     case -1:
