@@ -48,5 +48,5 @@ int main(int argc, char **argv) {
   MIN: 1
   */
 
-  return 1;
+  return 0;
 }

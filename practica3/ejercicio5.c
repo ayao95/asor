@@ -27,5 +27,5 @@ int main() {
   printf("directorio de trabajo actual: %s\n", path);
   free (path);
 
-  return 1;
+  return 0;
 }
